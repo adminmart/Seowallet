@@ -1,0 +1,46 @@
+
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    body {
+        font-family: "ProximaNova", sans-serif;
+      }
+
+    .font-bold{
+        font-family: "ProximaNova-Bold", sans-serif;
+    } 
+    .font-medium{
+        font-family: "ProximaNova-Medium", sans-serif;
+    } 
+    .font-semibold{
+        font-family: "ProximaNova-SemiBold", sans-serif;
+    }
+    .font-light{
+        font-family: "ProximaNova-Light", sans-serif;
+    }
+    .font-extrabold{
+        font-family: "ProximaNova-ExtraBold", sans-serif;
+    }  
+    .container {
+        @apply max-w-[1312px];
+    }
+   
+    .btn-primary{
+        @apply bg-primary text-white font-bold text-sm px-4 py-[10px] rounded-lg hover:bg-hoverPrimary justify-center; 
+    }
+
+    .btn-primary-semibold{
+        @apply bg-primary text-white font-semibold text-sm px-4 py-[10px] rounded-lg hover:bg-hoverPrimary justify-center; 
+    }
+
+    .testimonials .owl-carousel .owl-item img{
+        width: auto;
+    }
+   
+
+
+}
