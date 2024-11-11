@@ -21,7 +21,7 @@ module.exports = {
         },
       },
       animation: {
-        'scroll-up': 'scroll-up 10s linear infinite',
+        'scroll-up': 'scroll-up 40s linear infinite',
       },
     },
   },

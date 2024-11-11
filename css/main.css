@@ -49,6 +49,16 @@
         width: auto;
     }
 
+    .banner-gradient {
+        background: rgb(222, 223, 231);
+        background: linear-gradient(183deg, rgba(222, 223, 231, 0.5) 35%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    @media screen and (max-width:1199px) {
+        .container {
+            @apply px-5;
+        }
+    }
 
 
 }

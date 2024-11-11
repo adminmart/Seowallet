@@ -1,659 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeoWallet</title>
-    <link href="css/output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.svg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Download SEOwallet - a free Chrome extension with 250+ SEO features. Enhance your SEO tasks with our feature-rich free SEO extension by SEODebate.">
+        <title>SEOwallet - Free Chrome Extension with 250+ SEO Features</title>
+        <link href="css/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon"
+            href="./assets/images/logo/favicon.svg">
+        <link rel="stylesheet" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    </head>
 
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-</head>
-
-<body>
-    <div
-        class="head-wrapper bg-[url('../assets/images/backgrounds/main-background.svg')] bg-no-repeat bg-top bg-cover pb-40">
-        <!-- Header -->
-        <div class="container mx-auto">
-            <div class="flex justify-space-between py-8 items-center">
-                <div class="logo">
-                    <img src="./assets/images/logo/logo.svg" alt="logo" />
+    <body>
+        <div
+            class="head-wrapper banner-gradient  after:absolute after:md:inline-block after:hidden after:content-[''] lg:after:bg-[url('../assets/images/backgrounds/frame.png')] after:bg-no-repeat after:bg-top after:top-0  after:w-full after:h-full  xl:pb-40 sm:pb-20">
+            <!-- Header -->
+            <div id="header"
+                class="transition duration-300 w-full md:py-8 py-5 ">
+                <div class="container mx-auto relative z-10">
+                    <div class="flex justify-between  items-center">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./assets/images/logo/logo.svg"
+                                    alt="logo" />
+                            </a>
+                        </div>
+                        <!-- Desktop Nav Links -->
+                        <div class="hidden xl:flex gap-8 grow justify-center">
+                            <a href="#whyus"
+                                class="text-base text-blue font-medium hover:text-primary">Why
+                                Us</a>
+                            <a
+                                href="https://seodebate.com/articles/how-to-set-up-seowallet-account/"
+                                target="_blank"
+                                class="text-base text-blue font-medium hover:text-primary">Installation
+                                Guide</a>
+                            <a href="https://seodebate.com/seo-wallet/"
+                                target="_blank"
+                                class="text-base text-blue font-medium hover:text-primary">Features
+                                Guide</a>
+                            <a href="#reviews"
+                                class="text-base text-blue font-medium hover:text-primary">Reviews</a>
+                            <a href="#faqs"
+                                class="text-base text-blue font-medium hover:text-primary">FAQs
+                                Us</a>
+                            <a href="https://seodebate.com/contact/"
+                                target="_blank"
+                                class="text-base text-blue font-medium hover:text-primary">Contact
+                                Us</a>
+                        </div>
+                        <!-- Get Button -->
+                        <div class="hidden xl:flex">
+                            <button class="btn-primary">Get SEOWallet</button>
+                        </div>
+                        <!-- Mobile Menu Toggle Button -->
+                        <div class="xl:hidden">
+                            <button id="menu-toggle" class="focus:outline-none">
+                                <!-- Hamburger Icon -->
+                                <svg class="w-6 h-6 text-blue" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex gap-8  grow justify-center  ">
-                    <a href="https://seodebate.com/seo-wallet/ 
-                        " target="_blank" class="text-base text-blue font-medium hover:text-primary">Features</a>
-                    <a href="https://seodebate.com/articles/how-to-set-up-seowallet-account/ 
-                        " target="_blank" class="text-base text-blue font-medium hover:text-primary">Video
+            </div>
+            <!-- Slide-in Mobile Nav Links -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 h-full max-w-64 w-full bg-white transform -translate-x-full transition-transform duration-300 xl:hidden z-50 shadow-lg">
+                <div class="flex flex-col space-y-4 p-5">
+                    <!-- Logo -->
+                    <div class="logo mb-2">
+                        <img src="./assets/images/logo/logo.svg"
+                            alt="logo" />
+                    </div>
+                    <a href="#whyus"
+                        class="text-base text-blue font-medium hover:text-primary">Why
+                        Us</a>
+                    <a
+                        href="https://seodebate.com/articles/how-to-set-up-seowallet-account/"
+                        target="_blank"
+                        class="text-base text-blue font-medium hover:text-primary">Installation
                         Guide</a>
-                    <a href="#reviews" class="text-base text-blue font-medium hover:text-primary">Reviews</a>
-                    <a href="https://seodebate.com/contact/" target="_blank"
-                        class="text-base text-blue font-medium hover:text-primary">Contact Us</a>
-                </div>
-                <div class="flex">
-                    <button class="btn-primary">Get SEOWallet</button>
+                    <a href="https://seodebate.com/seo-wallet/"
+                        target="_blank"
+                        class="text-base text-blue font-medium hover:text-primary">Features
+                        Guide</a>
+                    <a href="#reviews"
+                        class="text-base text-blue font-medium hover:text-primary">Reviews</a>
+                    <a href="#faqs"
+                        class="text-base text-blue font-medium hover:text-primary">FAQs
+                        Us</a>
+                    <a href="https://seodebate.com/contact/"
+                        target="_blank"
+                        class="text-base text-blue font-medium hover:text-primary">Contact
+                        Us</a>
+                    <button class="btn-primary mt-5 w-full">Get
+                        SEOWallet</button>
                 </div>
             </div>
 
-            <!-- Banner Content -->
-            <div class="grid grid-cols-12 gap-6 pt-20">
-                <div class="lg:col-span-6 col-span-12">
-                    <h1 class="text-blue font-bold fw-bold lg:text-[76px] lg:leading-[80px] text-5xl">Helps
-                        find SEO issues and reduce manual work</h1>
-                    <div class="flex py-10 gap-6 items-center">
+            <!-- Overlay -->
+            <div id="overlay"
+                class="fixed inset-0 bg-black bg-opacity-50 hidden z-20"></div>
 
-                        <button
-                            class="btn-primary-semibold flex gap-3 py-4 px-5  items-center  w-full max-w-[320px] text-xl "><img
-                                src="./assets/images/icons/chrome.svg" class="h-6" alt="icon" />Install
-                            SEOWallet —
-                            It's free</button>
+            <div class="container mx-auto relative z-10">
+                <!-- Banner Content -->
+                <div class="grid grid-cols-12 gap-6 lg:pt-20 sm:pt-10 pt-8">
+                    <div class="xl:col-span-6 col-span-12">
+                        <h1
+                            class="text-blue font-bold fw-bold lg:text-[76px] md:text-5xl text-4xl lg:leading-[80px] ">Helps
+                            find SEO issues and reduce manual work</h1>
+                        <div class="sm:flex sm:py-10 py-6 gap-6 items-center">
+                            <button
+                                class="btn-primary-semibold flex gap-3 py-4 px-5  items-center  w-full sm:max-w-[320px] text-xl "><img
+                                    src="./assets/images/icons/chrome.svg"
+                                    class="h-6" alt="icon" />Install
+                                SEOWallet —
+                                It's free</button>
 
-                        <p class="text-xl text-blue opacity-80  font-normal">We
-                            are building SEO tools for anyone
-                            looking to improve SEO</p>
+                            <p
+                                class="sm:text-xl text-base text-blue opacity-80  font-normal sm:mt-0 mt-5">We
+                                are building an SEO tool for anyone looking to
+                                improve SEO</p>
 
-                    </div>
-                    <div class="md:flex pt-10  gap-9">
-                        <div class="flex gap-3 items-start">
-                            <img src="./assets/images/icons/user.svg" height="40" alt="icon" />
-                            <div class>
-                                <h5 class="font-bold text-xl text-blue">6,000</h5>
-                                <p class="text-base text-blue">users and
-                                    counting</p>
+                        </div>
+                        <div class="sm:flex lg:pt-10  gap-9">
+                            <div class="flex gap-3 items-start sm:mb-0 mb-4">
+                                <img src="./assets/images/icons/user.svg"
+                                    height="40" alt="icon" />
+                                <div class>
+                                    <h5
+                                        class="font-extrabold text-xl text-blue">7,000+</h5>
+                                    <p class="text-base text-blue">users and
+                                        counting</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3 items-start sm:mb-0 mb-4">
+                                <img src="./assets/images/icons/medal.svg"
+                                    height="40" alt="icon" />
+                                <div class>
+                                    <h5
+                                        class="font-extrabold text-xl text-blue">Featured
+                                        on</h5>
+                                    <p class="text-base text-blue">Chrome Web
+                                        Store</p>
+
+                                </div>
+                            </div>
+                            <div class="flex gap-3 items-start sm:mb-0 mb-4">
+                                <img src="./assets/images/icons/star.svg"
+                                    height="40" alt="icon" />
+                                <div class>
+                                    <h5
+                                        class="text-xl text-blue font-extrabold">4.93</h5>
+                                    <p class="text-base text-blue">45
+                                        Ratings</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex gap-3 items-start">
-                            <img src="./assets/images/icons/medal.svg" height="40" alt="icon" />
-                            <div class>
-                                <p class="text-base text-blue">Featured
-                                    on</p>
-                                <h5 class="font-bold text-xl text-blue">Chrome
-                                    Web Store</h5>
-                            </div>
-                        </div>
-                        <div class="flex gap-3 items-start">
-                            <img src="./assets/images/icons/star.svg" height="40" alt="icon" />
-                            <div class>
-                                <h5 class="text-xl text-blue font-extrabold">4.9</h5>
-                                <p class="text-base text-blue">(42
-                                    Ratings)</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- uncover Potential -->
-    <div class="container mx-auto py-20">
-        <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-3">Why
-            Choose SEOWallet?</h4>
-        <p class="text-base text-blue opacity-80">Thousands of people love
-            SEOWallet because it is:
-        </p>
-        <div class="pt-11 grid grid-cols-12 gap-[30px] ">
-            <div class="lg:col-span-4 col-span-12 group/card1 ">
-                <div
-                    class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent group-hover/card1:border-blue group-hover/card1:border-2">
-                    <img src="./assets/images/icons/gurantee.svg" height="22" class="h-6" alt="icon" />
-                    <h5 class="font-semibold text-xl text-blue mt-5 mb-4">Fast
-                        & Accurate</h5>
-                    <p class="text-xl text-blue opacity-80 lg:me-8">Delivers
-                        reliable results quickly to save you valuable time.
-                    </p>
-                </div>
-            </div>
-            <div class="lg:col-span-4 col-span-12 group/card2">
-                <div
-                    class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent  group-hover/card2:border-blue group-hover/card2:border-2">
-                    <img src="./assets/images/icons/loading.svg" height="22" class="h-6" alt="icon" />
-                    <h5 class="font-semibold text-xl text-blue mt-5 mb-4">Free
-                        to Use</h5>
-                    <p class="text-xl text-blue opacity-80 lg:me-8">Performs
-                        basic to advanced SEO functions at no cost.
-                    </p>
-                </div>
-            </div>
-            <div class="lg:col-span-4 col-span-12 group/card3">
-                <div
-                    class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent  group-hover/card3:border-blue group-hover/card3:border-2">
-                    <img src="./assets/images/icons/security.svg" height="22" class="h-6" alt="icon" />
-                    <h5 class="font-semibold text-xl text-blue mt-5 mb-4">More
-                        than 250 SEO Features</h5>
-                    <p class="text-xl text-blue opacity-80 lg:me-8">Equipped
-                        with 250+ features to handle your daily SEO tasks
-                    </p>
                 </div>
             </div>
 
         </div>
-    </div>
-    <!-- Features -->
-    <div class="container mx-auto py-12">
-        <div class="bg-[#F9F9FB] lg:pt-10 py-8 lg:px-16 px-8 rounded-2xl overflow-hidden">
-            <div class="grid grid-cols-12 gap-6 items-center">
-                <div class="lg:col-span-6 col-span-12">
-                    <div class="lg:pe-8">
-                        <h4 class="text-blue font-extrabold lg:text-[32px] text-2xl pb-5">Chrome
-                            extension with 250+ features for SEO-related
-                            tasks</h4>
-                        <div class="lg:pe-8">
-                            <p class="text-base text-blue opacity-80  pb-5">SEOWallet
-                                is a free Chrome extension that offers over
-                                250
-                                essential SEO tools to support your daily
-                                SEO
-                                needs effectively.
-                            </p>
-                            <p class="text-base text-blue opacity-80  pb-4">Whether
-                                you are an individual or an SEO agency
-                                looking
-                                to manage your own or your clients' SEO
-                                tasks,
-                                SEOWallet is the ultimate solution.
-                            </p>
-                        </div>
-                        <button class="btn-primary-semibold flex gap-3 items-center">Read
-                            More <img src="./assets/images/icons/top-arrow.svg" alt="icon" /></button>
-                    </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12 max-h-[500px]">
-
-                    <div class="flex flex-col gap-5 animate-scroll-up ">
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/search.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Search Intent Finder</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/image-optimization.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Image Optimization</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Instant Position Checker</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/page-pro.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Page Pro Analyzer</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">IndexAPI Connector</h6>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="flex flex-col gap-5 animate-scroll-up mt-5">
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/search.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Search Intent Finder</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/image-optimization.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Image Optimization</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Instant Position Checker</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/page-pro.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Page Pro Analyzer</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">IndexAPI Connector</h6>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="flex flex-col gap-5 animate-scroll-up mt-5">
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/search.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Search Intent Finder</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/image-optimization.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Image Optimization</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Instant Position Checker</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/page-pro.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">Page Pro Analyzer</h6>
-                        </div>
-                        <div class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
-                            <img src="./assets/images/icons/ipc.svg" class="h-6 w-6" alt="icon" />
-                            <h6 class="text-lg text-blue font-semibold">IndexAPI Connector</h6>
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Search intent finder -->
-    <div class="container mx-auto py-12">
-        <div class=" lg:py-10">
-            <div class="grid grid-cols-12 gap-6 items-center">
-                <div class="lg:col-span-6 col-span-12">
-                    <div class="flex justify-center">
-                        <img src="./assets/images/backgrounds/search-intent-finder.jpg" alt="image" />
-                    </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12 lg:ps-8  lg:pr-32">
-
-                    <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-5">Search
-                        Intent Finder</h4>
-                    <p class="text-[17px] text-blue opacity-80  mb-5">Use
-                        Search Intent Finder to view H1, meta tags,
-                        schema,
-                        and much more for each Google search result,
-                        helping
-                        you craft content that Google loves.</p>
-
-                    <div class="flex items-center gap-2 pb-4">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Page
-                            URLs on the
-                            SERP</h5>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Original
-                            Meta Titles on the SERP</h5>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Page pro analyzer -->
-    <div class="container mx-auto py-12">
-        <div class=" lg:py-10">
-            <div class="grid grid-cols-12 gap-6 items-center">
-                <div class="lg:col-span-6 col-span-12 lg:ps-32  lg:pe-32">
-                    <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-5">Page
-                        Pro Analyzer</h4>
-                    <p class="text-[17px] text-blue opacity-80  mb-5">Identify
-                        technical and on-page SEO issues with the Page Pro
-                        Analyzer for optimal site performance, covering more
-                        than 60 SEO factors.
-                    </p>
-
-                    <div class="flex items-center gap-2 pb-4">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Check
-                            Multiple Title Tags</h5>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Check
-                            Hreflang: Missing Self-Reference</h5>
-                    </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                    <div class>
-                        <img src="./assets/images/backgrounds/paqge-pro.jpg" alt="image" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Index api -->
-    <div class="container mx-auto py-12">
-        <div class="lg:py-10">
-            <div class="grid grid-cols-12 gap-6 items-center">
-                <div class="lg:col-span-6 col-span-12">
-                    <div class="flex justify-center">
-                        <img src="./assets/images/backgrounds/index-api.jpg" alt="image" />
-                    </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12 lg:ps-8  lg:pr-32">
-                    <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-5">IndexAPI
-                        Connector</h4>
-                    <p class="text-[17px] text-blue opacity-80  mb-5">Check
-                        and optimize the heading hierarchy to fix any issues
-                        and improve your page's structure. Heading
-                        Optimization covers the following:</p>
-
-                    <div class="flex items-center gap-2 pb-4">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Check
-                            Heading Hierarchy Issues</h5>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./assets/images/icons/okk.svg" class="h-7 w-7" alt="icon" />
-                        <h5 class="font-medium text-[17px] text-blue ">Highlight
-                            Headings</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- our users -->
-    <div class="py-12 testimonials" id="reviews">
-        <div class="container mx-auto relative">
-            <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-3">Hear
-                it from our users
-            </h4>
-            <p class="text-base text-blue opacity-80">See what our users
-                have to say about their experience!
-
+        <!-- Why choose -->
+        <div class="container mx-auto xl:py-20 py-10">
+            <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-3">Why
+                Choose SEOWallet?</h4>
+            <p class="text-base text-blue opacity-80">Thousands of people
+                love
+                SEOWallet because it is:
             </p>
-
-            <div class="owl-carousel owl-theme mt-8 ">
-                <div class="item bg-[#F5F6F8] p-9 rounded-2xl overflow-hidden">
-                    <div class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
-                        <img src="./assets/images/icons/filled-star.svg" height="22" class="h-6" alt="icon" />
-                        <h5 class="text-[15px] font-extrabold text-blue">4.9 /
-                            5.0
-                        </h5>
-                        <span class="text-blue opacity-70">on Chrome Web
-                            Store</span>
-                    </div>
-                    <p class="font-medium text-xl text-blue mt-3 line-clamp-3">
-                        This is the most extensive and detail oriented free
-                        tool
-                        I
-                        have ever seen or used. I use it to help me with
-                        site
-                        audits
-                        and I absolutely love it.
-                    </p>
-                    <div class="flex gap-5 items-center pt-9">
-                        <img src="./assets/images/profile/user-1.png" class="h-16 w-16 rounded-full" alt="profile" />
-                        <div class>
-                            <h6 class="text-lg font-medium text-blue">Daniel
-                                Brhel</h6>
-                            <p class="text-[15px] opacity-70">Oct 31,
-                                2024</p>
-                        </div>
+            <div class="pt-11 grid grid-cols-12 gap-[30px] ">
+                <div class="lg:col-span-4 col-span-12 group/card1 ">
+                    <div
+                        class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent group-hover/card1:border-blue group-hover/card1:border-2">
+                        <img src="./assets/images/icons/fast-accurate.svg"
+                            height="22" class="h-6" alt="icon" />
+                        <h5
+                            class="font-semibold text-xl text-blue mt-5 mb-4">Fast
+                            & Accurate</h5>
+                        <p
+                            class="text-xl text-blue opacity-80 lg:me-8">Delivers
+                            reliable results quickly to save you valuable
+                            time.
+                        </p>
                     </div>
                 </div>
-                <div class="item bg-[#F5F6F8] p-9 rounded-2xl">
-                    <div class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
-                        <img src="./assets/images/icons/filled-star.svg" height="22" class="h-6" alt="icon" />
-                        <h5 class="text-[15px]  font-extrabold text-blue">4.9 /
-                            5.0
-                        </h5>
-                        <span class="text-blue opacity-70">on Chrome Web
-                            Store</span>
-                    </div>
-                    <p class="font-medium text-xl text-blue mt-3 line-clamp-3">
-                        hello brother, this is really awesome tool but here
-                        I
-                        noticed one mistake in it. it does not shows the
-                        title
-                        of image even that title exists. I can't share the
-                        image
-                        but just want you to focus on its image optimization
-                        tool, thank you!
-
-                    </p>
-                    <div class="flex gap-5 items-center pt-9">
-                        <img src="./assets/images/profile/user-2.png" class="h-16 w-16 rounded-full" alt="profile" />
-                        <div class>
-                            <h6 class="text-lg font-medium text-blue">Shahid
-                                Sial
-                            </h6>
-                            <p class="text-[15px] opacity-70">Oct 31,
-                                2024</p>
-                        </div>
+                <div class="lg:col-span-4 col-span-12 group/card2">
+                    <div
+                        class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent  group-hover/card2:border-blue group-hover/card2:border-2">
+                        <img src="./assets/images/icons/freeto-use.svg"
+                            height="22"
+                            class="h-6" alt="icon" />
+                        <h5
+                            class="font-semibold text-xl text-blue mt-5 mb-4">Free
+                            to Use</h5>
+                        <p
+                            class="text-xl text-blue opacity-80 lg:me-8">Performs
+                            basic to advanced SEO functions at no cost.
+                        </p>
                     </div>
                 </div>
-                <div class="item bg-[#F5F6F8] p-9 rounded-2xl">
-                    <div class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
-                        <img src="./assets/images/icons/filled-star.svg" height="22" class="h-6" alt="icon" />
-                        <h5 class="text-[15px]  font-extrabold text-blue">4.9 /
-                            5.0
-                        </h5>
-                        <span class="text-blue opacity-70">on Chrome Web
-                            Store</span>
-                    </div>
-                    <p class="font-medium text-xl text-blue mt-3 line-clamp-3">
-                        OMG Best SEO extinction in the world good work i
-                        personally use its all features
-
-                    </p>
-                    <div class="flex gap-5 items-center pt-9">
-                        <img src="./assets/images/profile/user-3.png" class="h-16 w-16 rounded-full" alt="profile" />
-                        <div class>
-                            <h6 class="text-lg font-medium text-blue">Muhammmad
-                                Yasir
-                            </h6>
-                            <p class="text-[15px] opacity-70">Oct 31,
-                                2024</p>
-                        </div>
+                <div class="lg:col-span-4 col-span-12 group/card3">
+                    <div
+                        class="rounded-2xl bg-white p-[30px] shadow-md  border-2 border-transparent  group-hover/card3:border-blue group-hover/card3:border-2">
+                        <img src="./assets/images/icons/more.svg"
+                            height="22" class="h-6" alt="icon" />
+                        <h5
+                            class="font-semibold text-xl text-blue mt-5 mb-4">SEO
+                            Features</h5>
+                        <p
+                            class="text-xl text-blue opacity-80 lg:me-8">Equipped
+                            with 250+ features to handle your daily SEO
+                            tasks
+                        </p>
                     </div>
                 </div>
-
-
 
             </div>
+        </div>
+        <!-- Features -->
+        <div class="container mx-auto  xl:py-12 py-7">
+            <div
+                class="bg-[#F9F9FB]  xl:px-16 px-6 rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-6 col-span-12">
+                        <div class="xl:pe-8">
+                            <h4
+                                class="text-blue font-extrabold lg:text-[32px] text-2xl pb-5">Chrome
+                                extension with 250+ features for SEO-related
+                                tasks</h4>
+                            <div class="lg:pe-8">
+                                <p
+                                    class="text-base text-blue opacity-80  pb-5">SEOWallet
+                                    is a free Chrome extension that offers
+                                    over
+                                    250
+                                    essential SEO tools to support your
+                                    daily
+                                    SEO
+                                    needs effectively.
+                                </p>
+                                <p
+                                    class="text-base text-blue opacity-80  pb-4">Whether
+                                    you are an individual or an SEO agency
+                                    looking
+                                    to manage your own or your clients' SEO
+                                    tasks,
+                                    SEOWallet is the ultimate solution.
+                                </p>
+                            </div>
+                            <button
+                                class="btn-primary-semibold flex gap-3 items-center">Read
+                                More <img
+                                    src="./assets/images/icons/top-arrow.svg"
+                                    alt="icon" /></button>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:col-span-6 col-span-12 max-h-[500px] overflow-hidden sm:mt-0 mt-5">
 
-            <!-- Custom navigation buttons -->
-            <button
-                class="prev-btn absolute top-0 right-14 transform mt-4 bg-[#E6E8ED] h-10 w-10 flex justify-center items-center rounded-full">
-                <img src="./assets/images/icons/slide-arrows.svg" class="h-5 w-5" alt="icon" />
-            </button>
-            <button
-                class="next-btn absolute top-0 right-0 transform mt-4 bg-[#E6E8ED] h-10 w-10 flex justify-center items-center rounded-full rotate-180 ">
-                <img src="./assets/images/icons/slide-arrows.svg" class="h-5 w-5" alt="icon" />
-            </button>
+                        <div class="flex flex-col gap-5 animate-scroll-up ">
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/view-source.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">View
+                                    Rendered Source</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/url-toolkit.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">URL
+                                    Toolkit</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/redirect-mngr.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Redirects
+                                    Manager</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/link-checker.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Link
+                                    Checker</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img src="./assets/images/icons/search.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Search
+                                    Intent Finder</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/ai-assist.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">AI
+                                    Assistant</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/char-counter.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Character
+                                    & Word Counter</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/social-markup.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Social
+                                    Markup</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/heading-opt.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Heading
+                                    Optimisation</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/image-optimization.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Image
+                                    Optimization</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/serp-counter.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">SERP
+                                    Counter</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/serp-analysis.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">SERP
+                                    Analysis</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/domain-inspector.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Domain
+                                    Inspector</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/struct-data.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Structured
+                                    Data</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/page-pro.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">PagePro
+                                    Analyzer</h6>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-5 animate-scroll-up mt-5">
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/view-source.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">View
+                                    Rendered Source</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/url-toolkit.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">URL
+                                    Toolkit</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/redirect-mngr.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Redirects
+                                    Manager</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/link-checker.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Link
+                                    Checker</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img src="./assets/images/icons/search.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Search
+                                    Intent Finder</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/ai-assist.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">AI
+                                    Assistant</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/char-counter.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Character
+                                    & Word Counter</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/social-markup.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Social
+                                    Markup</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/heading-opt.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Heading
+                                    Optimisation</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/image-optimization.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Image
+                                    Optimization</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/serp-counter.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">SERP
+                                    Counter</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/serp-analysis.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">SERP
+                                    Analysis</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/domain-inspector.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Domain
+                                    Inspector</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/struct-data.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">Structured
+                                    Data</h6>
+                            </div>
+                            <div
+                                class="border-dashed border-2 rounded-2xl border-[#DBDEE6] p-6 flex gap-5">
+                                <img
+                                    src="./assets/images/icons/page-pro.svg"
+                                    class="h-6 w-6" alt="icon" />
+                                <h6
+                                    class="text-lg text-blue font-semibold">PagePro
+                                    Analyzer</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- Search intent finder -->
+        <div class="container mx-auto  xl:py-12 py-7">
+            <div class=" lg:py-10">
+                <div class="grid grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-6 col-span-12">
+                        <div class="flex justify-center">
+                            <img
+                                src="./assets/images/backgrounds/search-intent-finder.jpg"
+                                alt="image" />
+                        </div>
+                    </div>
+                    <div
+                        class="md:col-span-6 col-span-12 xl:ps-8  xl:pr-32">
 
-    </div>
+                        <h4
+                            class="text-blue font-bold lg:text-[32px] text-2xl pb-5">Search
+                            Intent Finder</h4>
+                        <p
+                            class="text-[17px] text-blue opacity-80  mb-5">Use
+                            Search Intent Finder to view H1, meta tags,
+                            schema,
+                            and much more for each Google search result,
+                            helping
+                            you craft content that Google loves.</p>
 
-    <!-- FAQ -->
-    <div class="container mx-auto lg:pt-20 pt-10 pb-8">
+                        <div class="flex items-center gap-2 pb-4">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">View
+                                Headings on the SERPs</h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">View
+                                Original Meta Tags on the SERPs</h5>
+                        </div>
 
-        <div class="grid grid-cols-12 gap-6 ">
-            <div class="lg:col-span-5 col-span-12 lg:pe-20">
-                <h4 class="text-blue font-bold lg:text-[32px] text-2xl pb-3">FAQs
-                </h4>
-                <p class="text-base text-blue opacity-80">Get to know
-                    about the most commonly asked questions here. Still
-                    need assistance? Contact us, and our support team
-                    will be happy to help!
-
-                </p>
+                    </div>
+                </div>
             </div>
-            <div class="lg:col-span-7 col-span-12">
-                <div class="w-full">
+        </div>
+
+        <!-- Page pro analyzer -->
+        <div class="container mx-auto  xl:py-12 py-7">
+            <div class="lg:py-10">
+                <div class="grid grid-cols-12 gap-6 items-center">
+                    <div
+                        class="md:col-span-6 col-span-12 xl:ps-32  xl:pe-32">
+                        <h4
+                            class="text-blue font-bold lg:text-[32px] text-2xl pb-5">PagePro
+                            Analyzer</h4>
+                        <p
+                            class="text-[17px] text-blue opacity-80  mb-5">Identify
+                            technical and on-page SEO issues with the Page
+                            Pro
+                            Analyzer for optimal site performance, covering
+                            more
+                            than 60 SEO factors.
+                        </p>
+
+                        <div class="flex items-center gap-2 pb-4">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">Check
+                                On page Issues</h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">Check
+                                Technical Issues</h5>
+                        </div>
+                    </div>
+                    <div class="md:col-span-6 col-span-12">
+                        <div class>
+                            <img
+                                src="./assets/images/backgrounds/paqge-pro.jpg"
+                                alt="image" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Index api -->
+        <div class="container mx-auto  xl:py-12 py-7">
+            <div class="lg:py-10">
+                <div class="grid grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-6 col-span-12">
+                        <div class="flex justify-center">
+                            <img
+                                src="./assets/images/backgrounds/index-api.jpg"
+                                alt="image" />
+                        </div>
+                    </div>
+                    <div
+                        class="md:col-span-6 col-span-12 xl:ps-8  xl:pr-32">
+                        <h4
+                            class="text-blue font-bold lg:text-[32px] text-2xl pb-5">IndexAPI
+                            Connector</h4>
+                        <p
+                            class="text-[17px] text-blue opacity-80  mb-5">Check
+                            and optimize the heading hierarchy to fix any issues
+                            and improve your page's structure. Heading
+                            Optimization covers the following:</p>
+
+                        <div class="flex items-center gap-2 pb-4">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">Google
+                                Index API compatibility</h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/images/icons/okk.svg"
+                                class="h-7 w-7" alt="icon" />
+                            <h5
+                                class="font-medium text-[17px] text-blue ">IndexNow
+                                API compatibility</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our users -->
+        <div class=" xl:py-12 py-7 testimonials">
+            <div class="container mx-auto relative">
+                <div class="sm:flex justify-between align-center">
                     <div>
-                        <button onclick="toggleAccordion(this)"
-                            class="w-full flex justify-between items-center text-left  font-medium focus:outline-none pb-4">
-                            <span class="text-lg text-blue font-bold ">Is
-                                SEOwallet free to use?
-                            </span>
-                            <span
-                                class="icon transition-transform duration-300 transform text-3xl text-blue font-bold">−</span>
-                        </button>
-                        <div class="panel text-base text-blue opacity-80 ">
-                            Yes, SEOwallet is completely free to use.
-                            However, there may be some paid features in the
-                            V2 and V3 versions of SEOwallet.
-                        </div>
+                        <h4
+                            class="text-blue font-bold lg:text-[32px] text-2xl pb-3">Hear
+                            it from our users
+                        </h4>
+                        <p class="text-base text-blue opacity-80">See what our
+                            users
+                            have to say about their experience!
+
+                        </p>
                     </div>
 
-                    <!-- Other items closed by default -->
-                    <div class="mt-6">
-                        <button onclick="toggleAccordion(this)"
-                            class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
-                            <span class="text-lg text-blue font-bold">How do
-                                I set up an SEOwallet account?
-                            </span>
-                            <span
-                                class="icon transition-transform duration-300 transform text-3xl text-blue font-extrabold">+</span>
+                    <!-- Custom navigation buttons -->
+                    <div class="flex gap-4">
+                        <button
+                            class="prev-btn  top-0 right-14 transform mt-4 bg-[#E6E8ED] h-10 w-10 flex justify-center items-center rounded-full">
+                            <img src="./assets/images/icons/slide-arrows.svg"
+                                class="h-5 w-5" alt="icon" />
                         </button>
-                        <div class="panel hidden text-base text-blue opacity-80 ">
-                            Setting up an SEOwallet account is quite easy.
-                            You can use your email or simply log in with
-                            your Google account. If you need a detailed
-                            guide, check <a
-                                href="https://www.google.com/url?q=https://seodebate.com/articles/how-to-set-up-seowallet-account/&sa=D&source=docs&ust=1731067371051827&usg=AOvVaw0dHJW9IZhVZb8lF-q_i3t8"
-                                target="_blank" class="text-primary">
-                                here</a>.
+                        <button
+                            class="next-btn  top-0 right-0 transform mt-4 bg-[#E6E8ED] h-10 w-10 flex justify-center items-center rounded-full rotate-180 ">
+                            <img src="./assets/images/icons/slide-arrows.svg"
+                                class="h-5 w-5" alt="icon" />
+                        </button>
+                    </div>
+                </div>
 
+                <div class="owl-carousel owl-theme mt-8 ">
+                    <div
+                        class="item bg-[#F5F6F8] xl:p-9 p-6 rounded-2xl overflow-hidden">
+                        <div
+                            class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
+                            <img src="./assets/images/icons/filled-star.svg"
+                                height="22" class="h-6" alt="icon" />
+                            <h5
+                                class="text-[15px] font-extrabold text-blue">5.0
+                                /
+                                5.0
+                            </h5>
+                            <span class="text-blue opacity-70">on Chrome Web
+                                Store</span>
+                        </div>
+                        <p
+                            class="font-medium text-xl text-blue mt-3 line-clamp-3">
+                            This is the most extensive and detail oriented free
+                            tool I have ever seen or used. I use it to help me
+                            with site audits and I absolutely love it.
+                        </p>
+                        <div class="flex gap-5 items-center pt-9">
+                            <img src="./assets/images/profile/user-2.png"
+                                class="h-16 w-16 rounded-full"
+                                alt="profile" />
+                            <div class>
+                                <h6
+                                    class="text-lg font-medium text-blue">Daniel
+                                    Brhel</h6>
+                                <p class="text-[15px] opacity-70">Oct 31,
+                                    2024</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="mt-6">
-                        <button onclick="toggleAccordion(this)"
-                            class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
-                            <span class="text-lg text-blue font-bold">Is
-                                SEOwallet enough to perform my routine SEO
-                                tasks?
-                            </span>
-                            <span
-                                class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
-                        </button>
-                        <div class="panel hidden text-base text-blue opacity-80 ">
-                            Yes, SEOwallet is developed by carefully
-                            considering all the essential needs of SEOs and
-                            provides a platform to perform your routine
-                            basic to advanced SEO tasks effectively.
+                    <div class="item bg-[#F5F6F8] xl:p-9 p-6 rounded-2xl">
+                        <div
+                            class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
+                            <img src="./assets/images/icons/filled-star.svg"
+                                height="22" class="h-6" alt="icon" />
+                            <h5
+                                class="text-[15px]  font-extrabold text-blue">5.0
+                                /
+                                5.0
+                            </h5>
+                            <span class="text-blue opacity-70">on Chrome Web
+                                Store</span>
+                        </div>
+                        <p
+                            class="font-medium text-xl text-blue mt-3 line-clamp-3">
+                            OMG Best SEO extinction in the world good work i
+                            personally use its all features
+                        </p>
+                        <div class="flex gap-5 items-center pt-9">
+                            <img src="./assets/images/profile/user-3.png"
+                                class="h-16 w-16 rounded-full"
+                                alt="profile" />
+                            <div class>
+                                <h6
+                                    class="text-lg font-medium text-blue">Muhammmad
+                                    Yasir
+                                </h6>
+                                <p class="text-[15px] opacity-70">Oct 24,
+                                    2024</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-6">
-                        <button onclick="toggleAccordion(this)"
-                            class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
-                            <span class="text-lg text-blue font-bold">How do
-                                I learn about using each feature?
-                            </span>
-                            <span
-                                class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
-                        </button>
-                        <div class="panel hidden text-base text-blue opacity-80 ">
-                            With each feature, you will find a “Help” button
-                            at the top. Clicking this will show you an
-                            option, “How to use.” This will lead to a
-                            detailed guide on how to use each feature.
+                    <div class="item bg-[#F5F6F8] xl:p-9 p-6 rounded-2xl">
+                        <div
+                            class="flex leading-[normal] items-center gap-1 bg-[#E9EAEC] p-1 pe-3 rounded-full w-fit">
+                            <img src="./assets/images/icons/filled-star.svg"
+                                height="22" class="h-6" alt="icon" />
+                            <h5
+                                class="text-[15px]  font-extrabold text-blue">5.0
+                                /
+                                5.0
+                            </h5>
+                            <span class="text-blue opacity-70">on Chrome Web
+                                Store</span>
                         </div>
-                    </div>
-                    <div class="mt-6">
-                        <button onclick="toggleAccordion(this)"
-                            class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
-                            <span class="text-lg text-blue font-bold">Does
-                                SEOwallet follow Google's best practices?
-                            </span>
-                            <span
-                                class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
-                        </button>
-                        <div class="panel hidden text-base text-blue opacity-80 ">
-                            Yes, SEOWallet strictly adheres to Google’s best
-                            practices. In fact, the main idea behind
-                            developing this Chrome extension was to prevent
-                            interruptions to users’ daily SEO tasks caused
-                            by the unavailability of other extensions
-                            whenever a Google update affects them.
-
+                        <p
+                            class="font-medium text-xl text-blue mt-3 line-clamp-3">
+                            Very detailed tools in one place. I appreciate their
+                            work thanks for create like this tool
+                        </p>
+                        <div class="flex gap-5 items-center pt-9">
+                            <img src="./assets/images/profile/user-1.png"
+                                class="h-16 w-16 rounded-full"
+                                alt="profile" />
+                            <div class>
+                                <h6
+                                    class="text-lg font-medium text-blue">MUHAMMAD
+                                    AWAIS AZIZ
+                                </h6>
+                                <p class="text-[15px] opacity-70">Oct 28,
+                                    2024</p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
             </div>
 
         </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="container mx-auto pt-8">
-        <div class="md:flex justify-between">
-            <img src="./assets/images/logo/logo.svg" alt="icon" />
-            <div class="flex items-center gap-5">
-                <a href="https://linkedin.com/company/seodebate" target="_blank"><img
-                        src="./assets/images/icons/linkdin.svg" class="h-6 w-6" alt="icon" /></a>
-                <a href="#" target="_blank"><img src="./assets/images/icons/facebook.svg" class="h-6 w-6"
-                        alt="icon" /></a>
-                <a href="#" target="_blank"><img src="./assets/images/icons/google-chrome.svg" class="h-6 w-6"
-                        alt="icon" /></a>
-                <a href="https://x.com/seodebate" target="_blank"><img src="./assets/images/icons/twitter.svg"
-                        class="h-6 w-6" alt="icon" /></a>
+        <!-- FAQ -->
+        <div class="container mx-auto lg:pt-20 pt-10 pb-8" id="faqs">
+
+            <div class="grid grid-cols-12 gap-6 ">
+                <div class="lg:col-span-5 col-span-12 lg:pe-20">
+                    <h4
+                        class="text-blue font-bold lg:text-[32px] text-2xl pb-3">FAQs
+                    </h4>
+                    <p class="text-base text-blue opacity-80">Get to know
+                        about the most commonly asked questions here. Still
+                        need assistance? Contact us, and our support team
+                        will be happy to help!
+
+                    </p>
+                </div>
+                <div class="lg:col-span-7 col-span-12">
+                    <div class="w-full">
+                        <div>
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between items-center text-left  font-medium focus:outline-none pb-4">
+                                <span
+                                    class="text-lg text-blue font-bold ">Is
+                                    SEOwallet free to use?
+                                </span>
+                                <span
+                                    class="icon transition-transform duration-300 transform text-3xl text-blue font-extrabold">−</span>
+                            </button>
+                            <div
+                                class="panel text-base text-blue opacity-80 ">
+                                Yes, SEOwallet is completely free to use.
+                                However, there may be some paid features in
+                                the
+                                V2 and V3 versions of SEOwallet.
+                            </div>
+                        </div>
+
+                        <!-- Other items closed by default -->
+                        <div class="mt-6">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
+                                <span
+                                    class="text-lg text-blue font-bold">How
+                                    do
+                                    I set up an SEOwallet account?
+                                </span>
+                                <span
+                                    class="icon transition-transform duration-300 transform text-3xl text-blue font-extrabold">+</span>
+                            </button>
+                            <div
+                                class="panel hidden text-base text-blue opacity-80 ">
+                                Setting up an SEOwallet account is quite
+                                easy.
+                                You can use your email or simply log in with
+                                your Google account. If you need a detailed
+                                guide, check <a
+                                    href="https://www.google.com/url?q=https://seodebate.com/articles/how-to-set-up-seowallet-account/&sa=D&source=docs&ust=1731067371051827&usg=AOvVaw0dHJW9IZhVZb8lF-q_i3t8"
+                                    target="_blank" class="text-primary">
+                                    here</a>.
+
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
+                                <span class="text-lg text-blue font-bold">Is
+                                    SEOwallet enough to perform my routine
+                                    SEO
+                                    tasks?
+                                </span>
+                                <span
+                                    class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
+                            </button>
+                            <div
+                                class="panel hidden text-base text-blue opacity-80 ">
+                                Yes, SEOwallet is developed by carefully
+                                considering all the essential needs of SEOs
+                                and
+                                provides a platform to perform your routine
+                                basic to advanced SEO tasks effectively.
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
+                                <span
+                                    class="text-lg text-blue font-bold">How
+                                    do
+                                    I learn about using each feature?
+                                </span>
+                                <span
+                                    class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
+                            </button>
+                            <div
+                                class="panel hidden text-base text-blue opacity-80 ">
+                                With each feature, you will find a “Help”
+                                button
+                                at the top. Clicking this will show you an
+                                option, “How to use.” This will lead to a
+                                detailed guide on how to use each feature.
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between items-center  text-left  font-medium focus:outline-none pb-4">
+                                <span
+                                    class="text-lg text-blue font-bold">Does
+                                    SEOwallet follow Google’s best
+                                    practices?
+                                </span>
+                                <span
+                                    class="icon transition-transform duration-300 transform  text-3xl text-blue font-extrabold">+</span>
+                            </button>
+                            <div
+                                class="panel hidden text-base text-blue opacity-80 ">
+                                Yes, SEOWallet strictly adheres to Google’s
+                                best
+                                practices. In fact, the main idea behind
+                                developing this Chrome extension was to
+                                prevent
+                                interruptions to users’ daily SEO tasks
+                                caused
+                                by the unavailability of other extensions
+                                whenever a Google update affects them.
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="border-t border-[#E6E8ED] my-8"></div>
-    <div class="container mx-auto pb-8">
-        <div class="md:flex justify-between">
-            <span class="text-[15px] text-blue opacity-80">© 2024 by <a href="https://seodebate.com/" target="_blank"
-                    class="text-primary font-medium ">
-                    SEODebate</a>. All rights reserved.</span>
-            <div class="md:flex gap-5 items-center">
-                <a href="https://seodebate.com/seo-wallet/" target="_blank"
-                    class="text-[15px] text-blue opacity-70 hover:text-primary">Guide</a>
-                <a href="https://seodebate.com/terms-and-conditions/" target="_blank"
-                    class="text-[15px] text-blue opacity-70 hover:text-primary">Terms
-                    of use</a>
-                <a href="https://seodebate.com/privacy-policy/" target="_blank"
-                    class="text-[15px] text-blue opacity-70 hover:text-primary">Privacy
-                    policy</a>
+
+        <!-- Footer -->
+        <div class="container mx-auto pt-8">
+            <div class="flex justify-between">
+                <a href="#"><img src="./assets/images/logo/logo.svg" alt="icon" /></a>
+                <div class="flex items-center sm:gap-5 gap-3">
+                    <a href="https://linkedin.com/company/seodebate"
+                        target="_blank"><img
+                            src="./assets/images/icons/linkdin.svg"
+                            class="h-6 w-6" alt="icon" /></a>
+                    <a href="#" target="_blank"><img
+                            src="./assets/images/icons/facebook.svg"
+                            class="h-6 w-6"
+                            alt="icon" /></a>
+                    <a href="#" target="_blank"><img
+                            src="./assets/images/icons/google-chrome.svg"
+                            class="h-6 w-6"
+                            alt="icon" /></a>
+                    <a href="https://x.com/seodebate" target="_blank"><img
+                            src="./assets/images/icons/twitter.svg"
+                            class="h-6 w-6" alt="icon" /></a>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="border-t border-[#E6E8ED] sm:my-8 my-5"></div>
+        <div class="container mx-auto sm:pb-8 pb-5">
+            <div
+                class="flex sm:flex-row flex-col flex-col-reverse justify-between">
+                <span class="text-[15px] text-blue opacity-80">© 2024 by <a
+                        href="https://seodebate.com/" target="_blank"
+                        class="text-primary font-medium ">
+                        SEODebate</a>. All rights reserved.</span>
+                <div
+                    class="md:flex gap-5 items-center group/opacity sm:mb-0 mb-2">
+                    <a href="https://seodebate.com/seo-wallet/"
+                        target="_blank"
+                        class="text-[15px] text-blue opacity-80 hover:opacity-100  hover:text-primary">Guide</a>
+                    <a href="https://seodebate.com/terms-and-conditions/"
+                        target="_blank"
+                        class="text-[15px] text-blue opacity-80 hover:opacity-100 hover:text-primary">Terms
+                        of use</a>
+                    <a href="https://seodebate.com/privacy-policy/"
+                        target="_blank"
+                        class="text-[15px] text-blue opacity-80 hover:opacity-100 hover:text-primary">Privacy
+                        policy</a>
+                </div>
+            </div>
+        </div>
 
-</body>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function () {
-        const owl = $(".owl-carousel");
-
-        // Initialize Owl Carousel
-        owl.owlCarousel({
-            loop: true,
-            margin: 32,
-            dots: false,
-            center: true,
-            nav: false,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
-            }
-        });
-
-        // Custom Button Actions
-        $('.next-btn').click(function () {
-            owl.trigger('next.owl.carousel');
-        });
-
-        $('.prev-btn').click(function () {
-            owl.trigger('prev.owl.carousel');
-        });
-    });
-</script>
-
-<script>
-    function toggleAccordion(button) {
-        const panel = button.nextElementSibling;
-        const icon = button.querySelector('.icon');
-
-        // Toggle the panel visibility
-        panel.classList.toggle('hidden');
-
-        // Change the icon between "+" and "-"
-        icon.textContent = icon.textContent === "+" ? "−" : "+";
-    }
-</script>
+    </body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </html>
