@@ -14,15 +14,6 @@ module.exports = {
         hoverPrimary:"#235ae5",
         blue:"#031B4E"
       },
-      keyframes: {
-        'scroll-up': {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(-100%)' },
-        },
-      },
-      animation: {
-        'scroll-up': 'scroll-up 40s linear infinite',
-      },
     },
   },
   plugins: [],

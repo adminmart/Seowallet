@@ -50,6 +50,24 @@ $(document).ready(function () {
     document.getElementById("mobile-menu").classList.add("-translate-x-full"); // Slide out menu
     document.getElementById("overlay").classList.add("hidden"); // Hide overlay
   });
+
+  $('a[href^="#"]').on("click", function (e) {
+    e.preventDefault(); // Prevent default anchor click behavior
+
+    var targetId = $(this).attr("href"); // Get the target section ID
+    var offset = 200; // Set your desired offset, e.g., for a fixed header
+
+    // Calculate the offset position
+    var targetPosition = $(targetId).offset().top - offset;
+
+    // Animate the scroll to the target position
+    $("html, body").animate(
+      {
+        scrollTop: targetPosition,
+      },
+      50
+    ); // The scroll duration (in milliseconds)
+  });
 });
 
 // FAQ
